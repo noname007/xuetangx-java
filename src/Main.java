@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -7,7 +6,8 @@ public class Main {
 	public static void main(String[] args){
 		//System.out.println("Hello World11111!");
 		//lab11(args);
-		lab12(args);
+//		lab12(args);
+		lab13(args);
 	}
 
 	public static void lab11(String[] args){
@@ -56,5 +56,42 @@ public class Main {
 	}
 	
 	
-	
+	public static void lab13(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		int arr_1_len = s.nextInt(); 
+		int arr_1 []  = new int[arr_1_len];
+		
+		for(int i = 0; i< arr_1_len; ++i)
+		{
+			arr_1[i] = s.nextInt();
+		}
+		
+		int arr_2_len = s.nextInt();
+
+		int same_count = 0;
+
+		for(int i = 0; i < arr_2_len; ++i)
+		{
+
+			int t = s.nextInt();
+			for(int j  = 0; j < arr_1_len; ++j)
+			{
+				if(arr_1[j] == t)
+				{
+					same_count ++;
+				}
+			}
+		}
+		if(same_count != 0)
+			System.out.println(same_count);
+		else
+			System.out.println("None");
+		
+
+		
+//		
+//		System.out.println(Arrays.toString(arr_1));
+		
+	}
 }
