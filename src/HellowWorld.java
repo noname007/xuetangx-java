@@ -35,11 +35,16 @@ public class HellowWorld {
 		boolean True = true;
 		
 		System.out.println(True);
-		int i = 1;
+		//int i = 1;
 		//System.out.println( ( ((1| 10)) & 9 >10 ?10:9));
 		
 		
-		
+		System.out.println(Arrays.toString(Score.values()));;
+		System.out.println((Score.EX.toString()));;
+//		for(Score e:Score)
+		{
+			
+		}
 //		
 //		int a11[] = new int[10];
 //		boolean [] a12 = new boolean[10];
@@ -47,4 +52,12 @@ public class HellowWorld {
 //		System.out.println(Arrays.toString(ai));
 		//System.out.println(str);
 	}
+}
+
+
+enum Score{
+	Fail,EX,Mid
+	
+	
+	
 }

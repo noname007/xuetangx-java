@@ -7,7 +7,9 @@ public class Main {
 		//System.out.println("Hello World11111!");
 		//lab11(args);
 //		lab12(args);
-		lab13(args);
+//		lab13(args);
+	
+		mooc.java.lab.two.Main.main(args);
 	}
 
 	public static void lab11(String[] args){
